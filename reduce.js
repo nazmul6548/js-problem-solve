@@ -48,4 +48,7 @@ const userCard = [
 const totalPrice =userCard.reduce((previousvalue, currentvalue) => {
     return previousvalue + currentvalue.price;
 },10);
-console.log(totalPrice);
+// console.log(totalPrice);
+
+
+
