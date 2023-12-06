@@ -20,8 +20,32 @@
 
 const arr = [1,2,7,9,6,7];
 arr.reduceRight((acc,cur) => {
-    console.log(acc);
-    console.log(cur);
+    // console.log(acc);
+    // console.log(cur);
     
     
 });
+
+const userCard = [
+    {
+    productName : "watch",
+    price:100,
+    
+},
+{
+    productName : "laptop",
+    price:20000,
+},
+{
+    productName : "iphone",
+    price:30000,
+},
+{
+    productName : "tv",
+    price:40000,
+}
+];
+const totalPrice =userCard.reduce((previousvalue, currentvalue) => {
+    return previousvalue + currentvalue.price;
+},10);
+console.log(totalPrice);
